@@ -1,4 +1,14 @@
 #!/usr/bin/make -f
 
+# See debhelper(7) (uncomment to enable).
+# Output every command that modifies files on the build system.
+#export DH_VERBOSE = 1
+
+export DH_GOLANG_EXCLUDES := cmd/vm tools cmd/ssh-over-vsock cmd/test-companion gvisor-tap-vsock/test
+
+# disable colored output
+export GINKGO_NO_COLOR := true
+
+
 %:
-	dh $@
+	dh $@ --builddirectory=_build --buildsystem=golang --with=golang

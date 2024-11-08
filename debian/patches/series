@@ -1,0 +1,2 @@
+no-winquit.patch
+0002-Avoid-crash-with-empty-resolv.conf.patch
