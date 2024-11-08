@@ -1,5 +1,51 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-containers-gvisor-tap-vsocks (0.8.0+ds1-3) unstable; urgency=medium
 
-  * Initial release
+  * Upload to unstable
+  * Declare that autopkgtest require access to the internet
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Reinhard Tartler <siretart@tauware.de>  Thu, 07 Nov 2024 05:26:38 -0500
+
+golang-github-containers-gvisor-tap-vsocks (0.8.0+ds1-2) experimental; urgency=medium
+
+  * Avoid crash with empty resolv.conf
+
+ -- Reinhard Tartler <siretart@tauware.de>  Wed, 06 Nov 2024 06:29:23 -0500
+
+golang-github-containers-gvisor-tap-vsocks (0.8.0+ds1-1) experimental; urgency=medium
+
+  * New upstream release
+  * Depend on golang-github-areyoulazy-libhosty-dev
+
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 05 Nov 2024 20:28:55 -0500
+
+golang-github-containers-gvisor-tap-vsocks (0.7.3+ds1-2) unstable; urgency=medium
+
+  * Team upload
+  * Fix build with gvisor 20240729.0
+  * Fix Vcs URL
+
+ -- Shengjing Zhu <zhsj@debian.org>  Wed, 07 Aug 2024 10:38:56 +0800
+
+golang-github-containers-gvisor-tap-vsocks (0.7.3+ds1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Reinhard Tartler <siretart@tauware.de>  Fri, 22 Mar 2024 12:02:40 -0400
+
+golang-github-containers-gvisor-tap-vsocks (0.7.2+ds1-1) unstable; urgency=medium
+
+  * debian/changelog: update
+
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 23 Jan 2024 19:49:47 -0500
+
+golang-github-containers-gvisor-tap-vsocks (0.7.1+ds1-2) unstable; urgency=medium
+
+  * debian/copyright: fix typos
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sun, 14 Jan 2024 14:23:20 -0500
+
+golang-github-containers-gvisor-tap-vsocks (0.7.1+ds1-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #1057435)
+
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 05 Dec 2023 02:22:58 +0000

@@ -1,0 +1,31 @@
+From: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Date: Wed, 7 Aug 2024 10:55:31 +0800
+Subject: no-winquit
+
+===================================================================
+---
+ cmd/gvproxy/main.go | 4 ----
+ 1 file changed, 4 deletions(-)
+
+diff --git a/cmd/gvproxy/main.go b/cmd/gvproxy/main.go
+index 09d7931..4921166 100644
+--- a/cmd/gvproxy/main.go
++++ b/cmd/gvproxy/main.go
+@@ -22,7 +22,6 @@ import (
+ 	"github.com/containers/gvisor-tap-vsock/pkg/transport"
+ 	"github.com/containers/gvisor-tap-vsock/pkg/types"
+ 	"github.com/containers/gvisor-tap-vsock/pkg/virtualnetwork"
+-	"github.com/containers/winquit/pkg/winquit"
+ 	"github.com/dustin/go-humanize"
+ 	"github.com/pkg/errors"
+ 	log "github.com/sirupsen/logrus"
+@@ -117,9 +116,6 @@ func main() {
+ 		log.SetLevel(log.DebugLevel)
+ 	}
+ 
+-	// Intercept WM_QUIT/WM_CLOSE events if on Windows as SIGTERM (noop on other OSs)
+-	winquit.SimulateSigTermOnQuit(sigChan)
+-
+ 	// Make sure the qemu socket provided is valid syntax
+ 	if len(qemuSocket) > 0 {
+ 		uri, err := url.Parse(qemuSocket)
